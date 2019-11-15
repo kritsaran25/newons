@@ -1,0 +1,133 @@
+<ons-page id="resturantkfc">
+  <ons-toolbar>
+          <div class="left">
+            <ons-back-button>Home</ons-back-button>
+            KFC
+          </div>
+          <div class="center"></div>
+        </ons-toolbar>
+
+<ons-card>
+  <ons-row id="row1">
+          <ons-col width="50%">
+              <div class="logo">
+                <img src="im/kfc.png" width="85%">
+              </div>                                        
+              </ons-col>
+          <ons-col width="50%">
+                  <p2>KFC</p2>
+                  <br>
+                  <p4>Min Delivery : $25 /</p4> <p5>Open</p5>
+                  <br></br>
+                  <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                  <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                  <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                  <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                  <img src="https://image.flaticon.com/icons/svg/149/149220.svg" style="width: 10%">
+                  <br>
+                  <p4>27 Reviews</p4>
+              </ons-col>
+  </ons-row>
+<br>
+
+<ons-row class="row justify-content-center">
+
+  <ons-col>
+                         
+          <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+              <div class="row">
+                  <div class="col">
+                      <ons-button style="background-color:goldenrod" data-toggle="modal" data-target="#cart" id="cart"  onclick="fn.pushPage({'id': 'transition.html'})">Cart (<span class="total-count"></span>)</ons-button>
+                      <ons-button style="background-color:goldenrod" class="clear-cart btn btn-danger">Clear Cart</ons-button>
+                  </div>
+              </div>
+          </nav>
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="card" style="width: 95%;background-color:rgb(255, 255, 155)">
+                          <div class="card-block">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/foodhermes-31ce7.appspot.com/o/1.png?alt=media&token=da3992f1-ed2a-4496-b2a5-aeec3b7adf7d" alt="">
+                              <br><p4 class="card-title">ข้าวไก่ผู้พัน สุดเวิร์ค</p4>
+                              <p class="card-text">Price : 89 ฿</p>
+                              <ons-button style="background-color:goldenrod"><a data-name="แมคไก่" data-price="89" class="add-to-cart btn btn-primary" >Add to cart</a></ons-button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+                  <div class="card" style="width: 95%;background-color:rgb(255, 255, 155)">
+
+                      <div class="card-block">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/foodhermes-31ce7.appspot.com/o/2.png?alt=media&token=6f7cf9e4-1322-4643-ab4d-6db1f88db486" alt="">
+                          <br><p4 class="card-title">ข้าวไก่ผู้พันแซ่บ สุดเวิร์ค (Beef)</p4>
+                          <p class="card-text">Price : 59 ฿</p>
+                          <ons-button style="background-color:goldenrod"><a data-name="ดีลักซ์ชีสเบอร์เกอร์" data-price="59" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+                      </div>
+                  </div>
+          </div>
+
+          <div class="col">
+                  <div class="card" style="width: 95%;background-color:rgb(255, 255, 155)">
+                     <div lass="card-block">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/foodhermes-31ce7.appspot.com/o/3.png?alt=media&token=af62ea59-c217-4d18-a57e-4848b3a15ed6" alt="">
+                         <br><p4 class="card-title">ข้าวไก่ผู้พันซี๊ด สุดเวิร์ค</p4>
+                         <p class="card-text">Price : 89 ฿</p>
+                         <ons-button style="background-color:goldenrod"><a data-name="ดับเบิ้ลบิกแมค" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+                      </div>
+                  </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 95%;background-color:rgb(255, 255, 155)">
+               <div lass="card-block">
+                 <img src="https://firebasestorage.googleapis.com/v0/b/foodhermes-31ce7.appspot.com/o/4.png?alt=media&token=803c9427-1fd0-4c7c-a1d1-fd2b6ac11579" alt="">
+                   <br><p4 class="card-title">ชิคแอนด์แชร์ ไก่วิงซ์แซ่บ</p4>
+                   <p class="card-text">Price : 89 ฿</p>
+                   <ons-button style="background-color:goldenrod"><a data-name="ดับเบิ้ลบิกแมค" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+                </div>
+            </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 95%;background-color:rgb(255, 255, 155)">
+         <div lass="card-block">
+           <img src="https://firebasestorage.googleapis.com/v0/b/foodhermes-31ce7.appspot.com/o/5.png?alt=media&token=feeef247-74a6-4e0a-93a6-f388fe754361" alt="">
+             <br><p4 class="card-title">ชิคแอนด์แชร์ ไก่ป๊อปและนักเก็ตส์</p4>
+             <p class="card-text">Price : 89 ฿</p>
+             <ons-button style="background-color:goldenrod"><a data-name="ดับเบิ้ลบิกแมค" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+          </div>
+      </div>
+</div>
+
+<div class="col">
+  <div class="card" style="width: 95%;background-color:rgb(255, 255, 155)">
+     <div lass="card-block">
+       <img src="https://firebasestorage.googleapis.com/v0/b/foodhermes-31ce7.appspot.com/o/6.png?alt=media&token=ba8dbc11-56e9-46e6-9f43-3d45c871a2ea" alt="">
+         <br><p4 class="card-title">ชีสไบค์ บัคเก็ต</p4>
+         <p class="card-text">Price : 89 ฿</p>
+         <ons-button style="background-color:goldenrod"><a data-name="ดับเบิ้ลบิกแมค" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card" style="width: 95%;background-color:rgb(255, 255, 155)">
+     <div lass="card-block">
+       <img src="https://firebasestorage.googleapis.com/v0/b/foodhermes-31ce7.appspot.com/o/7.png?alt=media&token=6c3ad212-217c-4030-b4bd-3ec49c23262c" alt="">
+         <br><p4 class="card-title">ไก่จุใจ ไก่กรอบชีสซี่</p4>
+         <p class="card-text">Price : 89 ฿</p>
+         <ons-button style="background-color:goldenrod"><a data-name="ดับเบิ้ลบิกแมค" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+      </div>
+  </div>
+</div>
+
+  </ons-col>
+</ons-row>
+</ons-card>           
+
+  
+
+</ons-page>

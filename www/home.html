@@ -1,0 +1,92 @@
+<ons-page id="homepage">
+  
+    <div class="content" style="text-align: center;">
+        <div class="recommended">
+            <h4>Recommended</h4>
+            <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
+                class="recommended_list" id="carousel">
+                <ons-carousel-item modifier="nodivider" id="item1" class="recommended_item">
+                    <div class="thumbnail" style="background-image: url('images/item1.jpg')">
+                    </div>
+                </ons-carousel-item>                
+            </ons-carousel>
+        </div>
+        
+        <ons-row>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'KFCpullHook.html', 'title': 'KFCPullHook'})">
+              <div class="title"><img src="im/kfc.png" width="80" height="80"></div>
+              <div>KFC</div>
+            </ons-card>
+          </ons-col>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'PHpullHook.html', 'title': 'PHPullHook'})">
+              <div class="title"><img src="im/PH.png" width="80" height="80"></div>
+              <div>Pizza Hut</div>
+            </ons-card>
+          </ons-col>
+        </ons-row>
+
+        <ons-row>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'MCpullHook.html', 'title': 'MCPullHook'})">
+              <div class="title"><img src="im/MC.png" width="100" height="80"></div>
+              <div>McDonald’s</div>
+            </ons-card>
+          </ons-col>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'SWpullHook.html', 'title': 'SWPullHook'})">
+              <div class="title"><img src="im/sw.png" width="100" height="80"></div>
+              <div>Subway</div>
+            </ons-card>
+          </ons-col>
+        </ons-row>
+
+        <ons-row>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'DKpullHook.html', 'title': 'KFCPullHook'})">
+              <div class="title"><img src="im/DD.png" width="80" height="80" class="kfc"></div>
+              <div>Dunkin' Donuts</div>
+            </ons-card>
+          </ons-col>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'PHpullHook.html', 'title': 'PHPullHook'})">
+              <div class="title"><img src="im/bk.png" width="80" height="80"></div>
+              <div>Burger King</div>
+            </ons-card>
+          </ons-col>
+        </ons-row>
+        <ons-row>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'MCpullHook.html', 'title': 'MCPullHook'})">
+              <div class="title"><img src="im/sb.png" width="80" height="80"></div>
+              <div>Starbucks</div>
+            </ons-card>
+          </ons-col>
+          <ons-col>
+            <ons-card onclick="fn.pushPage({'id': 'SWpullHook.html', 'title': 'SWPullHook'})">
+              <div class="title"><img src="im/dp.png" width="80" height="80"></div>
+              <div>Domino’s Pizza</div>
+            </ons-card>
+          </ons-col>
+        </ons-row>
+
+        <style>
+          .intro {
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 40px;
+          }
+
+          ons-card {
+            cursor: pointer;
+            color: #333;
+          }
+
+          .card__title,
+          .card--material__title {
+            font-size: 20px;
+            text-align: center;
+          }
+        </style>
+      </ons-page>

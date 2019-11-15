@@ -1,0 +1,23 @@
+<ons-page id="tabbar-page">
+        <ons-toolbar style="background-color:goldenrod;">
+          <div class="center">Hermes food</div>
+          <div class="right">
+            <ons-toolbar-button onclick="fn.toggleMenu()">
+              <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+        </ons-toolbar>
+        <ons-tabbar swipeable id="appTabbar" position="auto">
+          <ons-tab label="Home" icon="ion-home" page="home.html" active></ons-tab>
+          <ons-tab label="Promotion" icon="ion-edit" page="forms.html"></ons-tab>
+          <ons-tab label="Setting" icon="ion-film-marker" page="animations.html"></ons-tab>
+        </ons-tabbar>
+
+        <script>
+          ons.getScriptPage().addEventListener('prechange', function (event) {
+            if (event.target.matches('#appTabbar')) {
+              event.currentTarget.querySelector('ons-toolbar .center').innerHTML = event.tabItem.getAttribute('label');
+            }
+          });
+        </script>
+      </ons-page>

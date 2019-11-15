@@ -1,0 +1,51 @@
+
+    <ons-page id="page2">
+        <ons-toolbar>
+            <!-- header ของ app -->
+            <div class="right">
+                <!-- ปุ่ม ปิดหน้า app เมื่อกดแล้วจะทำงานที่ function pop_page() -->
+                <ons-toolbar-button onclick="pop_page()">
+                    <ons-icon icon="md-close"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+          
+            <div class="center">Register</div>
+        </ons-toolbar><!-- header ของ app -->
+        <ons-card>
+            <div class="box" style="text-align: center">
+                <div class="group" style="margin: 20px;">
+                    <label for="user" class="label">Username</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group" style="margin: 20px;">
+                    <label for="user" class="label">Password</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group" style="margin: 20px;">
+                    <label for="user" class="label">E-mail</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group" style="margin: 20px;">
+                    <label for="user" class="label">Adress</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group" style="margin: 20px;">
+                    <label for="user" class="label">Username</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <ons-button id ="page1" onclick="page1()">Sing up</ons-button>
+            </div>
+        </ons-card>
+        <style>
+            #page .page__background {
+                background-image: linear-gradient(rgb(0, 247, 255), rgba(147, 238, 223, 0.726)),
+                    url("../../media/examples/lizard.png");
+            }
+        </style>
+        <script>
+            function page1(){
+                 window.location.href='page1.html'
+            }
+       
+        </script>
+    </ons-page>

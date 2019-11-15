@@ -1,0 +1,64 @@
+<ons-page >
+        <ons-list-title>Navigator</ons-list-title>
+        <ons-list >
+          <ons-list-item onclick="fn.loadView(0)">
+            <div class="left">
+              <ons-icon fixed-width class="list-item__icon" icon="ion-home, material:md-home"></ons-icon>
+            </div>
+            <div class="center">
+              Home
+            </div>
+            <div class="right">
+              <ons-icon icon="fa-link"></ons-icon>
+            </div>
+          </ons-list-item>
+          <ons-list-item onclick="fn.loadView(1)">
+            <div class="left">
+              <ons-icon fixed-width class="list-item__icon" icon="ion-edit, material:md-edit"></ons-icon>
+            </div>
+            <div class="center">
+              Promotion
+            </div>
+            <div class="right">
+              <ons-icon icon="fa-link"></ons-icon>
+            </div>
+          </ons-list-item>
+          <ons-list-item onclick="fn.loadView(2)">
+            <div class="left">
+              <ons-icon fixed-width class="list-item__icon" icon="ion-film-marker, material: md-movie-alt"></ons-icon>
+            </div>
+            <div class="center">
+              Setting
+            </div>
+            <div class="right">
+              <ons-icon icon="fa-link"></ons-icon>
+            </div>
+          </ons-list-item>
+        </ons-list>
+
+        <script>
+          ons.getScriptPage().onInit = function () {
+            // Set ons-splitter-side animation
+            this.parentElement.setAttribute('animation', ons.platform.isAndroid() ? 'overlay' : 'reveal');
+          };
+        </script>
+
+        <style>
+          .profile-pic {
+            width: 200px;
+            background-color: #fff;
+            margin: 20px auto 10px;
+            border: 1px solid #999;
+            border-radius: 4px;
+          }
+
+          .profile-pic>img {
+            display: block;
+            max-width: 100%;
+          }
+
+          ons-list-item {
+            color: #444;
+          }
+        </style>
+      </ons-page>

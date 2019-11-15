@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/onsenui.css">
+    <link rel="stylesheet" href="css/onsen-css-components.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="menu.js"></script>
+    <script src="js/onsenui.min.js"></script>
+</head>
+<body>
+    <ons-page id="page1">
+
+        <div class></div>
+          <div style="text-align: center; margin-top: 70px;">
+              <div class="logo"> <img src="im/logo.png" width="200" height="200"></div>
+              <ons-card>
+ 
+                  <div class="group" style="margin: 15px;">
+                      <label for="user" class="label">Username</label>
+                      <input id="user" type="text" class="input">
+                  </div>
+                  <div class="group" style="margin: 15px">
+                      <label for="pass" class="label">Password</label>
+                      <input id="pass" type="password" class="input" data-type="password">
+                  </div>
+              </ons-card>
+              <!-- ปุ่ม Push page เมื่อกดแล้วจะทำงานที่ function change_page() -->
+              <div class="buton">
+                  <ons-button id ="index" onclick="index()">GO</ons-button>
+                  <ons-button id ="register" onclick ="regis()">register</ons-button>
+              </div>
+              <h2>or</h2>
+              <div>
+                  <ons-button class="face">FACEBOOK</ons-button>
+              </div>
+              <div>
+                  <ons-button class="goo">GOOGLE+</ons-button>
+              </div>
+              <Script>
+              function index(){
+                window.location.href='index.html'
+              }
+              function regis(){
+                  window.location.href='page2.html'
+              }
+
+              </Script>
+              <style>
+                  #page1 .page__background {
+                      background-image: linear-gradient(rgb(0, 247, 255), rgba(147, 238, 223, 0.726)),
+                          url("../../media/examples/lizard.png");
+                  }
+
+                  .face {
+                      margin: 3px;
+                      background-color: blue;
+                  }
+
+                  .goo {
+                      margin: 1px;
+                      background-color: red;
+                  }
+              </style>
+      </ons-page>
+</body>
+</html>

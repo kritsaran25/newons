@@ -1,0 +1,25 @@
+<ons-page>
+        <ons-toolbar>
+          <div class="left">
+            <ons-back-button>setting</ons-back-button>Contact us
+          </div>
+          <div class="center"></div>
+        </ons-toolbar>
+        <p style="text-align: center">
+          <div>
+            <ons-card>
+              <h4>
+                <div>Hermes company</div>
+                <div>call: 045-3156248</div>
+                <div>address: 80/1 kratuu,kratuu,phuket</div>
+                <div>E-mail: Hermes_company@gmail.com</div>
+              </h4>
+            </ons-card>
+          </div>
+        </p>
+        <script>
+          ons.getScriptPage().onInit = function () {
+            this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+          }
+        </script>
+      </ons-page>
